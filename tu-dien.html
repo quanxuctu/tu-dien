@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let eng = ['One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight', 'Nine', 'Ten'];
+    let vn = ['Một', 'Hai', 'Ba', 'Bốn', 'Năm', 'Sáu', 'Bảy', 'Tám', 'Chín', 'Mười'];
+    let find = prompt('Input: ');
+    let flag = false;
+    for (let i = 0; i < vn.length; i++) {
+        if (find == vn[i]) {
+            flag = true;
+            alert(vn[i]+' = '+eng[i]);
+        }
+    }
+    if(!flag){
+        alert('Dont Find '+find);
+    }
+
+</script>
+</body>
+</html>
